@@ -3,10 +3,10 @@ This project is part of the Operating Systems course at Instituto Superior Técn
 
 The development is split into two main parts:
 
-📁 Part 1 — Batch Command Processing from Files
+ Part 1 — Batch Command Processing from Files
 The first part of the project focuses on adapting the system to read and execute commands from files rather than from the terminal.
 
-✨ Main Features:
+ Main Features:
 Reading .jobs Files:
 The program takes a directory path as input and processes all files with the .jobs extension. Each file contains a sequence of commands to manage events.
 
@@ -19,10 +19,10 @@ For each input file, an output file with the same name and the .out extension is
 Use of POSIX File Descriptors:
 File operations are performed exclusively using POSIX system calls (open, read, write, etc.), avoiding high-level C libraries like stdio.h.
 
-⚙️ Part 2 — Parallel Processing with Multiple Processes
+ Part 2 — Parallel Processing with Multiple Processes
 The second part introduces parallelism to improve performance by processing multiple input files simultaneously.
 
-✨ Main Features:
+ Main Features:
 Forking Child Processes:
 A new child process is spawned for each .jobs file to execute its commands independently.
 
